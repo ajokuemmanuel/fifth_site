@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alvana High School - Signup Form</title>
+</head>
+<body style="background-color: lightsalmon; background-image: url();">
+    <header>
+        <table style="width: 100%;">
+            <tr>
+                <td><h1>Alvana High School</h1></td>
+                <td style="text-align: right;"><button>Register</button>&nbsp;&nbsp;<button>Login</button></td>
+            </tr>
+        </table>
+        <hr>
+    </header>
+    <main>
+        <h3 style="text-align: center;">Student Enrollment Form</h3>
+        <hr size="3" width="200px">
+        <hr size="2" width="150px">
+        <hr size="1" width="100px">
+        <fieldset style="width: fit-content; margin-inline: auto;">
+            <form align="center" action="processing.php" method="post" enctype="multipart/form-data">
+                <div>
+                    <label for="c_name">Enter Candidate's Name:</label>
+                    <input type="text" id="c_name" name="name_data" placeholder="Enter Fullname Only" disabled maxlength="50" minlength="1">
+                </div><br>
+                <div>
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" name="" id="phone" placeholder="080*********">
+                </div><br>
+                <div>
+                    <label for="age">Age</label>
+                    <input type="number" name="" id="age" min="18" max="30">
+                </div><br>
+                <div>
+                    <label for="dob">Date Of Birth</label>
+                    <input type="date" name="dob" id="dob">
+                </div><br>
+                <div>
+                    <label for="color">Pick a Color</label>
+                    <input type="color" name="" id="color">
+                </div><br>
+                <div>
+                    <span>Specify Your Gender</span><br>
+                    <input type="radio" name="gender"  checked id="male"><label for="male"> Male</label>
+                    <input type="radio" name="gender" id="female"><label for="female"> Female</label>
+                    <input type="radio" name="gender" id="other"><label for="other"> Other</label>
+                </div><br>
+                <div>
+                    <label for="country">Choose Your Countries</label>
+                    <select>
+                       <option value=""disabled selected>List Of Countries</option>
+                        <option value="gh">Ghana</option>
+                        <option value="ng">Nigeria</option>
+                        <option value="mar">Morocco</option>
+                        <option value="tg">Togo</option>
+                        <option value="eg">Egypt</option>
+                    </select>
+                </div><br>
+                <div>
+                    <span>Choose min of 3 Colors</span><br>
+                    <input type="checkbox" name="color" id="red" ><label for="red">Red</label>
+                    <input type="checkbox" name="color" id="yellow" ><label for="yellow">Yellow</label>
+                    <input type="checkbox" name="color" id="blue" ><label for="blue">Blue</label>
+                    <input type="checkbox" name="color" id="green" ><label for="green">Green</label>
+                    <input type="checkbox" name="color" id="pink" ><label for="pink">Pink</label>
+                </div><br>
+                <div>
+                    <label for="bio">Bio</label><br>
+                    <textarea name="" id="bio" cols="100" rows="10" placeholder="Short Description..."></textarea>
+                </div><br>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Email">
+                </div><br>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" minlength="8" placeholder="Password" id="password">
+                </div><br>
+                <div>
+                    <label for="img">Upload Image</label><br>
+                    <input type="file" id="img">
+                </div><br>
+                <div>
+                    <label for="aud">Upload Audio</label><br> 
+                    <input type="file" id="aud">
+                </div><br>
+                <div>
+                    <label for="vid"></label>
+                    <input type="file" id="vid">
+                </div><br>
+                    <button type="submit">Save</button>
+                    <input type="submit" value="Enter">
+                </div><br>
+                <div>   
+
+                </div>
+            </form>
+        </fieldset>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
